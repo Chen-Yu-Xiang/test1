@@ -7,3 +7,13 @@ script: true
     - nosetests --with-coverage --coverage report
 script: 
   - python TestCalculator.py
+deploy:
+  provider: heroku
+  api_key:
+    secure: dbbeeb66-c696-4aca-b1ee-8b5261ce8a77
+  app: test-my-travisci-project
+  on:
+    repo: jimting/GitProjectTutorialExample
+  #Setting your heroku Procfile here!!!
+  run:
+    "web: gunicorn app_run:app"  
