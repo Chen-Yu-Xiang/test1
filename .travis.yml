@@ -14,7 +14,8 @@ deploy:
   app: test-tt
   on:
     repo:Chen-Yu-Xiang/test1
-
+    branch：master 
   #Setting your heroku Procfile here!!!
   run:
     "web: gunicorn app_run:app"  
+    
