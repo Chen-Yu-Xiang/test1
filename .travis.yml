@@ -13,8 +13,9 @@ deploy:
     secure: dbbeeb66-c696-4aca-b1ee-8b5261ce8a77
   app: test-tt
   on:
-    master
     repo:Chen-Yu-Xiang/test1
+  on:
+    branch: master
   #Setting your heroku Procfile here!!!
   run:
     "web: gunicorn app_run:app"  
