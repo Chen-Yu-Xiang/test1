@@ -18,5 +18,5 @@ deploy:
     branch: master
   #Setting your heroku Procfile here!!!
   run:
-    "web: gunicorn app_run:app"  
+    web: gunicorn app_run:app
     
