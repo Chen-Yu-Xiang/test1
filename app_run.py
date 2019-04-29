@@ -5,8 +5,6 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def he():
-    print("hello")
 @app.route('/index')
 def index():
     data = "Deploying a Flask App To Heroku"
